@@ -9,6 +9,10 @@ include device/xiaomi/msm8937-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/prada
 
+# Camera
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /vendor/bin/mm-qcamera-daemon=23
+
 # Kernel
 TARGET_KERNEL_CONFIG := mi8937_defconfig
 
