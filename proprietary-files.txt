@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from prada-user 6.0.1 MMB29M V10.2.2.0.MCEMIXM release-keys
+# daisy Package version: daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 
 # ACDB
 etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
@@ -304,6 +305,9 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
 vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
+
+# Charger - from daisy
+vendor/bin/hvdcp_opti
 
 # Firmwares
 etc/firmware/mxt_308u_b5_f.raw:vendor/firmware/mxt_308u_b5_f.raw
