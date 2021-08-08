@@ -35,9 +35,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
 # Wifi
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiOverlay_prada
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/prada/prada-vendor.mk)
