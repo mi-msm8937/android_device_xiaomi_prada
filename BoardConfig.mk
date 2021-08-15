@@ -13,6 +13,10 @@ DEVICE_PATH := device/xiaomi/prada
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/bin/mm-qcamera-daemon=23
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_prada
+TARGET_RECOVERY_DEVICE_MODULES := libinit_prada
+
 # Kernel
 TARGET_KERNEL_CONFIG := mi8937_defconfig
 
