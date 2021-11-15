@@ -80,6 +80,8 @@
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
+    <ctl name="Lineout_1 amp" value="DISABLE"/>
+    <ctl name="headset amp" value="DISABLE"/>
     <ctl name="SPK" value="ZERO" />
     <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
@@ -1256,7 +1258,7 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHR" value="Switch" />
         <ctl name="RX2 Digital Volume" value="83" />
-        <ctl name="Ext Spk Switch" value="On" />
+        <ctl name="Lineout_1 amp" value="ENABLE"/>
     </path>
 
     <path name="speaker-and-hdmi">
@@ -1323,6 +1325,7 @@
         <ctl name="HPHR" value="Switch" />
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="headset-mic">
@@ -1359,13 +1362,14 @@
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
+        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="voice-speaker">
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="Ext Spk Switch" value="On" />
+        <ctl name="Lineout_1 amp" value="ENABLE"/>
     </path>
 
     <path name="wsa-voice-speaker">
@@ -1387,6 +1391,7 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
+        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="voice-speaker-and-voice-headphones">
@@ -1407,7 +1412,7 @@
         <ctl name="HPHR" value="Switch" />
         <ctl name="RX1 Digital Volume" value="83" />
         <ctl name="RX2 Digital Volume" value="83" />
-        <ctl name="Ext Spk Switch" value="On" />
+        <ctl name="Lineout_1 amp" value="DUALMODE"/>
     </path>
 
     <path name="usb-headphones">
