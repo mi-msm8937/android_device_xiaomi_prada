@@ -15,6 +15,9 @@ $(call inherit-product, vendor/revengeos/config/common.mk)
 # Inherit from prada device
 $(call inherit-product, device/xiaomi/prada/device.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-revengeos
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := prada
 PRODUCT_NAME := revengeos_prada
