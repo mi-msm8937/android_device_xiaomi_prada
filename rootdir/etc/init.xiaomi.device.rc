@@ -1,0 +1,3 @@
+# HVDCP
+on boot
+    enable vendor.hvdcp_opti
