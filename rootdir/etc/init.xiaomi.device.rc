@@ -1,0 +1,4 @@
+# Camera
+on property:sys.boot_completed=1
+    stop vendor.camera-provider-2-4
+    stop qcamerasvr
