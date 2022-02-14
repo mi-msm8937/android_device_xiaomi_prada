@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# ConsumerIR
+TARGET_HAS_NO_CONSUMERIR := true
+
 # Vibrator
 TARGET_USES_DEVICE_SPECIFIC_VIBRATOR := true
 
