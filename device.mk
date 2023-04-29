@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshims_android \
     libshims_binder \
-    libshims_c_camera \
     libwui
 
 # Soong namespaces
