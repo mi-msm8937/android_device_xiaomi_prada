@@ -33,6 +33,12 @@ function blob_fixup() {
         |vendor/lib/libmmcamera_pdaf.so \
         |vendor/bin/mm-qcamera-daemon)
             sed -i 's|data/misc/camera|data/vendor/qcam|g' "${2}"
+            if ! "${PATCHELF}" --print-needed "${2}" | grep "libshim_pthreadts.so" >/dev/null; then
+                "${PATCHELF}" --add-needed "libshim_pthreadts.so" "${2}"
+            fi
+            if ! "${PATCHELF}" --print-needed "${2}" | grep "libshim_mutexdestroy.so" >/dev/null; then
+                "${PATCHELF}" --add-needed "libshim_mutexdestroy.so" "${2}"
+            fi
             ;;
         vendor/lib/libmmcamera2_stats_modules.so)
             sed -i 's|data/misc/camera|data/vendor/qcam|g' "${2}"
